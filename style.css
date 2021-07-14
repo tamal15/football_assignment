@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* copa america */
+.copa-america-2021{
+    background-color: #2D25A0;
+    width:125%;
+}
+
+.copa-america{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap: 102px;
+
+}
+
+.copa-america-detail .copa-america-name{
+    font-size:64px ;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: 156px;
+    width:485px;
+    height:230px;
+    margin-top: 207px;
+    color:#FFFFFF;
+  
+    
+   
+
+}
+  
+
+.copa-america-picture img{
+    width: 556.01px;
+    height: 438px;
+    margin-bottom: 86px;
+    margin-top: 153px;
+    transition: transform 0.2s ease-in-out;
+    
+    
+}
+
+.copa-america img:hover{
+    transform: translate(-10px, -10px);
+}
+
+.copa-america-live{
+    background: #E02C6D;
+    margin-left: 156px;
+    width: 168px;
+    margin-right: 156px;
+    padding: 10px 24px;
+
+}
+
+.copa-wabsite{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.copa-america-icon{
+    margin-left: 15px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* many player styles */
+
+.many-players .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:30px;
+    margin: 50px auto; 
+    margin-left: 180px;
+  
+}
+
+article{
+    background: white;
+    padding: 15px;
+    width: 302px;
+    height: 474px;
+    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+    
+
+
+    .copa-image img{
+        width: 300px;
+        height: 256px;
+    }
+
+
+
+
+
+
+
+    /* all highlights */
+    .all-highlights .container{
+        /* display:flex;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 69px;
+        margin-left: 182px;
+        margin-top: 105px;
+     
+    }
+
+    .highlights-image img{
+        width: 567px;
+        height: 427px; 
+    }
+
+    .highlights{
+        width: 466px;
+        height: 309px;
+    }
+
+    .highlights h1{
+        font-size: 48px;
+        line-height: 60px;
+        width: 466px;
+        height: 120px;
+    }
+
+
+    .button{
+        background:#E02C6D;
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    
+    .button:hover{
+        padding: 12px 22px;
+        transition: 0.1s;
+    }
+
+
+
+
+
+
+  /* Footer  style start */
+footer {
+    margin-top: 40px;
+    padding-top: 25px;
+}
+.footer-image,
+.icons {
+    text-align: center;
+    line-height: 28px;
+}
+.fab {
+    font-size: 28px;
+    color: #969bab;
+    background: hsla(0, 5%, 74%, 0.623);
+    padding: 8px;
+    border-radius: 100%;
+    margin: 20px 10px;
+}
+footer p {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Footer  style end */
+
+
+
+   
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    
+       
+       
+    
+    .copa-america-name h1 {
+        text-align: left;
+        margin-left: -80px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .copa-america-picture img {
+        width: 80%;
+    }
+
+    .copa-america-icon {
+        width: 168px;
+        /* height: 54px; */
+        margin: 20px 0;
+        margin-left: 20px;
+    }
+    .copa-america-live a {
+        /* display: none; */
+        padding: 20px 2px;
+        font-size: 16px;
+    }
+   
+    .many-players.container,.all-highlights .container,.footer-image,.many-players .container
+    ,.copa-america-2021 .copa-america{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+        padding: 0px;
+        justify-content:left;
+        margin-left:0;
+        width:30px;
+        margin-bottom: 10px;
+    }
+    .player img {
+        width: 100%;
+    }
+    .player-info {
+        width: 77%;
+    }
+}
+    
+
+
+
+
+
+    /*media tab*/
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+        .many-players.container,.all-highlights .container,.footer-image,.many-players .container
+    ,.copa-america-2021 .copa-america{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        justify-content:left;
+        margin-left:0;
+        width:30px;
+        margin-bottom: 10px;
+    }
